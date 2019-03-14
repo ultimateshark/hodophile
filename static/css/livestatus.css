@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One|Cantarell|Yesteryear');
+
+
+body{
+	background-color:#fff; 
+}
+
+*{
+	font-family:'Cantarell',sans-serif;
+}
+
+nav{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:50px;
+	color:#fff;
+	z-index:999;
+	transition:0.2s;
+	background-color: rgba(0,0,0,1);
+}
+
+.logo{
+	font-family: 'Yesteryear',cursive;
+	font-size:2.2em;
+	position: absolute;
+	left:40px;
+	top:0px;
+}
+nav ul li{
+  display: inline;
+  padding:20px;
+  background-color: blue;
+}
+
+.list{
+	float: right;
+	margin-right:50px;
+	margin-top:10px;
+}
+.list div{
+	display: inline;
+	margin-right:30px;
+	font-size: 1.4em;
+}
+
+.list div:hover{
+	cursor:pointer;
+
+}
+
+
+/******************************************************
+*******************************************************
+*******************************************************/
+
+.heading{
+	margin-top:-22px;
+	font-size:1.3em;
+	background-color: #00a8b5;
+}
+
+.circle {
+  height: 20px;
+  width: 20px;
+  background-color:#bbb;
+  border-radius: 50%;
+  border:6px solid #999;
+  display: inline-block;
+}
+
+.line{
+	border-left: 3px solid #bbb;
+	height:120px;
+	margin-left:13.5px;
+	margin-top:-10px;
+}
+
+.st_name{
+	font-size: 1.4em;
+	width:235px;
+}
+
+.cl{
+	margin-left:250px;
+	margin-top:-100px;
+}
+
+
+.map{
+	margin-left:28%;
+}
+
+.map_cont:not(:first-child){
+	margin-top: 100px;
+}
+
+.sch_arr_dept{
+	font-size: 1.1em;
+	margin-top:10px;
+	margin-left:20px;
+
+}
+
+.act_arr_dept{
+	margin-left:310px;
+	margin-top:-150px;
+	font-size:1.1em;
+}
+
+.early{
+	color:green;
+}
+
+.late{
+	color:red;
+}

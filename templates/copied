@@ -1,0 +1,20 @@
+PNR{
+	CNF : 100%;
+	RAC+WL :100%;
+	GNWL:100%;
+	RNWL : 100%;
+	Charting:57%; //ok
+}
+
+TQ{
+	TQWL:0% //verygood
+	Premium Tatkal Reservation: 100%;
+	Tatkal Quota:100%;
+}
+
+
+{
+	Boarding Point Change:100%; // travelexchange && quint
+	Circular Ticket : 100%;
+	Foreign:100%;	
+}

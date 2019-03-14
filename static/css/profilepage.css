@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:700|Comfortaa:300|Catamaran:100');
+
+
+*{
+	font-family: 'Catamaran',sans-serif;
+}
+
+
+/*body{
+	background: linear-gradient(#00a8b5 40%, #74dac6) no-repeat fixed;
+}*/
+
+
+
+
+
+
+.logo{
+	font-family: 'Yesteryear',cursive;
+	font-size:2.3em;
+	position: absolute;
+	left:40px;
+	top:20px;
+	color:rgba(255,255,255,1);
+}
+
+
+
+.list{
+	position: absolute;
+	left:250px;
+	top:10px;
+	font-family: 'Comfortaa',cursive;	
+}
+
+
+.list div{
+	display: inline;
+	margin-right:30px;
+	font-size: 1.4em;
+}
+
+.side_nav{
+	position: fixed;
+	top:0;
+	width:250px;
+	height:100%;
+	background:linear-gradient(#00a8b5 40%, #74dac6);
+}
+
+.your_trips_box{
+	margin-top:30px;
+}
+
+.h{
+	font-size:1.3em;
+	font-weight:bold;
+}
+
+
+.trip_box{
+	background-color:#f2f4fb;
+	padding-top:20px;
+	padding-bottom: 20px;
+	border-radius: 20px;
+	border:1px solid #aedadd;
+	margin-top:20px;
+}
+
+
+.book_now_btn{
+	font-size:1.2em;
+	background-color:#00a8b5;
+	color:#fff;
+	font-weight: bold;
+	width:140px;
+	border:1px solid #41a7b3;
+	border-radius:50px;
+}
+
+
+.book_now_btn:hover{
+	opacity:0.7;
+	cursor: pointer;
+}
+
+.book_now_btn:focus{
+	outline:none;
+}
+
+.pass_info_box{
+	width:97%;
+	background-color: #eee;
+	border: 1px solid #00a8b5;
+	margin-left:15px;
+	padding-top:30px;
+	margin-top:-20px;
+	padding-bottom:20px; 
+	border-radius:10px;
+	transition:0.3s;
+}
+
+.pass_info{
+	padding-top:10px;
+	padding-left:40px;
+	padding-right:40px;
+	font-size:1.1em;
+}
+
+.payment_status{
+	font-weight: bold;
+	color:#0b8457;
+	font-size:1.2em;
+	user-select: none;
+}
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: block
+}
+
+.expand_btn{
+	transition:0.3s;
+}
+
+.expand_btn:hover{
+	cursor: pointer;
+}
+
+.expand_btn_180{
+	transform: rotate(180deg);
+}

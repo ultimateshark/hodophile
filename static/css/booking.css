@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One|Cantarell|Yesteryear');
+
+
+body{
+	background-color:#eee;
+}
+
+*{
+	font-family:'Cantarell',sans-serif;
+}
+
+nav{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:50px;
+	color:#fff;
+	z-index:999;
+	transition:0.2s;
+/*	background-color: rgba(0,0,0,1);*/
+	background-color:#00a8b5;
+
+}
+
+.logo{
+	font-family: 'Yesteryear',cursive;
+	font-size:2.2em;
+	position: absolute;
+	left:0px;
+	top:0px;
+/*	background-color:rgba(0,0,0,0.8);
+*/	padding-left:30px;
+	padding-right: 40px;
+	padding-top:8px;
+	border-bottom-right-radius:90px; 
+}
+
+
+
+.list{
+	float: right;
+	margin-right:0px;
+	margin-top:0px;
+	padding-left:60px;
+	padding-right:60px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	/*background-color:rgba(0,0,0,0.8);*/
+	border-bottom-left-radius:120px; 
+}
+.list div{
+	display: inline;
+	margin-right:30px;
+	font-size: 1.4em;
+}
+
+.list div:hover{
+	cursor:pointer;
+}
+
+.train_selected_display{
+	position:absolute;
+	width:100%;
+	height:150px;
+	background-color: #fff;
+	margin-top:45px;
+}
+
+.pax_box{
+	
+}

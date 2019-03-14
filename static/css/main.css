@@ -1,0 +1,75 @@
+nav{
+	background-color: black;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:50px;
+	color:#fff;
+	z-index:999;
+}
+
+.bg_main{
+	background:url("../images/bg2.jpg") fixed no-repeat;
+	height:100vh;
+	background-size:cover;
+	width:100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+
+.input_box{
+	position: relative;
+	top:582px;
+	background-color:rgba(0,0,0,0.7);
+}
+
+
+
+
+input[type=text]{
+	width:90%;
+}
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ,color 5000s;
+
+}
+
+
+input,select{
+	font-size:1.1em;
+   
+	height:45px;
+	border-bottom:2px solid  #fff;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+	background-color:transparent;
+    color:#fff;
+    
+}
+
+
+input,select:focus{
+    outline: none;
+}
+
+input[type=text]:focus{
+	border-color:red;
+	transition: 0.5s ;
+}
+
+
+.offers{
+	color:#000;
+	position:relative;
+	top:750px;
+}

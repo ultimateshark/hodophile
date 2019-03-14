@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hodophile | Cheapest Indian Railway Tickets Booking </title>
+	<meta name="description" content="IRCTC Booking , cheapest , train from station to station ,IRCTC enquiry and details , PNR Status , Ticket Prices and Fare , Cancellation Details , Refund Details ,Reservation  Quota , help">
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="../static/css/simple-grid.min.css">
+	<link rel="stylesheet" href="../static/css/trainresults.css">
+</head>
+<body>
+
+	<nav>
+	<div class="logo">Hodophile</div>
+
+	<div class="list">
+		<div>Trains</div>
+		<div>Flights</div>
+		<div>Bus</div>
+		<div>Recharge</div>
+		<div>Login</div>
+	</div>
+</nav>
+
+<br><br>
+
+
+<div class="search_box_wrap">
+	<div class="search_box">
+			<input type="text" name="" placeholder="FROM">
+			<span class="swap">&#8644;</span>
+			<input type="text" name="" placeholder="TO">
+			<input type="date">
+			<button class="search_btn">SEARCH</button>
+
+	</div>
+</div>
+
+<!-- Search Box ends -->
+
+
+<div class="container">
+	<div class="search_results">
+		<div class=container">
+			<br>
+			<div class="row">
+				<div class="col-12 date_day">Friday , 6 May</div>
+			</div>
+		</div>	
+
+	<br><br>
+			
+		<div class="train_box">
+			<div class="det"><span id="train_route_btn">12581</span> <div class="t_name">MUV NDLS SF EXP</div></div>
+			<div class="time_wrap">
+				<div class="circle"></div>
+				<div class="time">23:20</div>
+				<div class="stations">Ghaziabad</div>	
+				<div class="duration">4h 42m</div>
+				 <hr>  
+				<div class="circle"></div>
+				<div class="time">05:00</div>
+				<div class="stations">Kanpur Central</div>					
+			</div>
+
+
+			<div class="avl_classes">
+				<button>EC</button>
+				<button>1A</button>
+				<button>2A</button>
+				<button>3A</button>
+				<button>CC</button>
+				<button>SL</button>
+				<button>2S</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Train Route Modal  -->
+
+<div id="train_route_modal" class="modal">
+  <div class="modal_cont">
+    <span class="close">&times;</span>
+    <p>Lorem Ipsum Dolor Sit Amet</p>
+  </div>
+
+</div>
+
+<!-- Train Route Modal Ends -->
+
+
+<script>
+	
+	var modal=document.getElementById("train_route_modal");
+	var btn=document.getElementById("train_route_btn");
+
+	var close_btn=document.getElementsByClassName("close")[0];
+
+
+	btn.onclick=function(){
+		modal.style.display="block";
+	}
+
+	close_btn.onclick=function(){
+		modal.style.display="none";
+	}
+
+
+	window.onclick=function(event){
+		if(event.target==modal){
+			modal.style.display="none";
+		}
+	}
+
+</script>
+
+</body>
+</html>

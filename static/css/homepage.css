@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:700|Comfortaa:300|Catamaran:100');
+
+
+*{
+	font-family: 'Catamaran',sans-serif;
+}
+
+body{
+/*	background-color:#00a8b5;*/
+	background: linear-gradient(#00a8b5 40%, #74dac6) no-repeat fixed;
+}
+
+
+nav{
+	position:fixed;
+	top:30px;
+	left:0;
+	width:100%;
+	height:50px;
+	color:#fff;
+	z-index:999;
+	transition:0.2s;
+}
+
+
+
+.logo{
+	font-family: 'Yesteryear',cursive;
+	font-size:3em;
+	position: absolute;
+	left:40px;
+	top:-12px;
+}
+
+
+
+.list{
+	position: absolute;
+	left:250px;
+	top:10px;
+	font-family: 'Comfortaa',cursive;	
+}
+
+
+.list div{
+	display: inline;
+	margin-right:30px;
+	font-size: 1.4em;
+}
+
+
+.txts{
+	position: absolute;
+	top:100px;
+	right:340px;
+	
+}
+
+.txt1{
+	font-size:4em;
+	font-family: 'Asap',sans-serif;
+	width:300px;
+}
+
+.txt1_sub{
+	margin-top:-40px;
+	font-family: 'Asap',sans-serif;
+}
+
+.txt2{
+	font-size:1.4em;
+	margin-top:20px;
+}
+
+
+.input_box{
+	border:2px solid rgba(255,255,255,0.1);
+	position:absolute;
+	top:330px;
+	right:237px;
+	width:400px;
+	height:385px;
+	background-color:rgba(255,255,255,0.3);
+}
+
+.input_box_cont{
+	padding-top:35px;
+	padding-bottom:50px;
+	width:100%;
+}
+
+
+.train_opts{
+	width:496px;
+	padding-top:6px;
+}
+
+.train_opts div{
+	display: inline;
+	font-size:1em;
+	padding-top:6px;
+	padding-bottom:5px;
+	padding-left:11px;
+	padding-right:8px;
+
+}
+
+.train_opts div:hover{
+	cursor: pointer;
+}
+
+
+
+.active_opts{
+	background-color: #f7b633;
+	border:none;
+	border-bottom:3px solid #f16821;
+	color:#fff;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ,color 5000s;
+}
+
+
+input[type=text],input[type=password],input[type=date]{
+	background-color:rgba(255,255,255,0.2);
+	border:2px solid rgba(255,255,255,0.2);
+
+}
+
+input{
+	width:300px;
+	height:45px;
+	margin-top:10px;
+}
+
+.train_inp_opts{
+	margin-left:50px;
+}
+
+
+
+
+.swap_btn{
+	margin-left:130px;
+	margin-top:10px;
+	background-color:transparent;
+	/*border:3px solid #f16821;*/
+	border:3px solid rgba(255,255,255,0.4);
+	border-radius: 50%;
+}
+
+
+.train_search_btn{
+	width:305px;
+	height:45px;
+	margin-top:10px;
+	background-color: #f7b633;
+	border:none;
+	border-bottom:3px solid #f16821;
+	color:#fff;
+}
+
+
+
+
+/*
+
+.offers_box{
+	position: relative;
+	top:900px;
+	left:7%;
+	width:87%;
+}
+
+.offers_box div{
+	display: inline-grid;
+	
+}	
+
+.offers_box div:first-child{
+
+}
+
+.offers_box div:not(:first-child){
+	margin-left:20px;
+}
+
+.offer_1{
+	width: 400px;
+	height:600px;
+	font-size: 3em;
+	background-color:rgba(255,255,255,0.6);
+}
+
+.offer_2{
+	width:350px;
+	height:320px;
+	background-color:rgba(255,255,255,0.6);
+	font-size: 3em;
+}
+
+.offer_3{
+	position: relative;
+	top:120px;
+	width:450px;
+	height:200px;
+	background-color:rgba(255,255,255,0.6);
+	font-size: 3em;
+}
+
+.offer_4{
+	position: relative;
+	top:-270px;
+	left:403px;
+	width:825px;
+	height:270px;
+	background-color:rgba(255,255,255,0.6);
+	font-size: 3em;
+}*/
+
+
+.offers_box{
+	position: relative;
+	top:900px;
+	left:7%;
+	width:87%;
+}	
+
+	
+.offer_box_1 , .offer_box_2 , .offer_box_3{
+background-color:rgba(255,255,255,0.5);
+height:350px;
+border:2px solid rgba(255,255,255,0.4);
+}
+
+
+
+
+.how_it_works{
+	position: relative;
+	top:1100px;
+}

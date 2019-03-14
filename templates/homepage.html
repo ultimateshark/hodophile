@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Hodophile| Cheapest  Train Tickets , Flights , Hotels  </title>
+	<meta name="description" content="Cheapest Train Tickets , Flights , Hotels ,Buses , recharge, Amazing Offers , Discount">
+	<link href="https://fonts.googleapis.com/css?family=Yesteryear|PT+Sans+Narrow" rel="stylesheet">
+	<meta name="og:title" property="og:title" content="Amazing Offers on Train Tickets , Flights, Buses , Hotels ">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	
+	<link rel="stylesheet" href="../static/css/simple-grid.css">
+	<link rel="stylesheet" href="../static/css/homepage.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<nav>
+
+<div class="logo">Hodophile</div>
+
+	<div class="list">
+		<div>Trains</div>
+		<div>Flights</div>
+		<div>Bus</div>
+		<div>Recharge</div>
+		<div>Login</div>
+	</div>
+
+</nav>
+
+
+ <div class="txts">
+	<div class="txt1">BOOK <br> <div class="txt1_sub">  &amp; TRAVEL</div></div>
+	<div class="txt2">Book Now and Pay Later</div>
+</div>
+ 
+
+
+
+
+<div class="input_box">
+
+
+			<div class="train_opts">
+				<div class="opts active_opts" onclick="showOpts(0)">Search Trains</div>
+				<div class="opts active_opts" onclick="showOpts(1)">PNR Status</div>
+				<div class="opts active_opts" onclick="showOpts(2)">Live Status</div>
+				<div class="opts active_opts" onclick="showOpts(3)">Station Status</div>
+			</div>
+
+		<div class="input_box_cont">
+
+			<div class="train_inp_opts search_train_sec">
+			<form>
+					<input type="text" placeholder="From"><br>
+					<button class="swap_btn">&#8645;</button><br>
+					<input type="text" placeholder="To"><br>
+					<input type="date"><br>
+					<button class="train_search_btn">Search</button>
+			</form>
+		</div>
+
+		<div class="train_inp_opts pnr_sec">
+			PNR
+		</div>
+
+		<div class="train_inp_opts live_status_sec">
+			Live Status
+		</div>
+
+		<div class="train_inp_opts  station_status_sec">
+			Station Status
+		</div>
+
+	</div>
+</div> <!-- input box ends  -->
+
+
+
+<!-- Offers Section Starts -->
+
+
+<div class="offers_box">
+	<div class="row center">
+		<div class="col-4 ">
+			<div class="offer_box_1">
+				Offer 1
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="offer_box_2">
+				Offer 2
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="offer_box_3">
+				Offer 3
+			</div>
+		</div>
+	</div>
+</div>
+ 
+
+
+
+
+<!-- <div class="offers_box">
+
+	<div class="offer_1">Offer 1</div>
+	<div class="offer_2">Offer 2</div>
+	<div class="offer_3">Offer 3</div>
+	<div class="offer_4">Offer 4</div>
+</div> -->
+
+
+
+
+<div class="how_it_works">
+	<div class="how_it_works_h center">How it Works?</div>
+
+	<br><br>
+	<div class="container">
+		<div class="row center	">
+			<div class="col-12">Step 1</div>
+		</div>
+		<div class="row center	">
+			<div class="col-12">Step 2</div>
+		</div>
+		<div class="row center	">
+			<div class="col-12">Step 3</div>
+		</div>
+	</div>
+
+</div>s
+
+
+
+<!-- Script Starts -->
+<script>
+var index=0;
+showOpts(index);
+
+
+function showOpts(index){
+	var i;
+	var x=document.getElementsByClassName("train_inp_opts");
+	var opts=document.getElementsByClassName("opts");
+
+	for(i=0;i<x.length;i++){
+		x[i].style.display="none";
+	}
+
+	for(i=0;i<opts.length;i++){
+		opts[i].className=opts[i].className.replace("active_opts","");
+	}
+
+	x[index].style.display="block";
+	opts[index].className+="active_opts";
+}
+
+</script>
+
+</body>
+</html>

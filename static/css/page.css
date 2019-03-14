@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One|Cantarell|Yesteryear');
+
+
+body{
+	background-color:#ddd; 
+}
+
+*{
+	font-family:'Cantarell',sans-serif;
+}
+
+nav{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:50px;
+	color:#fff;
+	z-index:999;
+	transition:0.2s;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.logo{
+	font-family: 'Yesteryear',cursive;
+	font-size:2.2em;
+	position: absolute;
+	left:40px;
+	top:0px;
+}
+nav ul li{
+  display: inline;
+  padding:20px;
+  background-color: blue;
+}
+
+.list{
+	float: right;
+	margin-right:50px;
+	margin-top:10px;
+}
+.list div{
+	display: inline;
+	margin-right:30px;
+	font-size: 1.4em;
+}
+
+.list div:hover{
+	cursor:pointer;
+
+}
+
+.container{
+	font-size:1.3em;
+	text-align:justify;
+	margin-left:20px;
+}
+
+.pnr_head{
+	font-family: 'Patua One', cursive !important;
+	font-size:1.2em;
+}
+
+ul li {
+	list-style-type: none;
+	padding-top:40px;
+}
+

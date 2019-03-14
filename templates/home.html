@@ -1,9 +1,209 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>hodophile</title>
+	<title>Hodophile| Cheapest  Train Tickets , Flights , Hotels  </title>
+	<meta name="description" content="Cheapest Train Tickets , Flights , Hotels ,Buses , recharge, Amazing Offers , Discount">
+	<link href="https://fonts.googleapis.com/css?family=Yesteryear|PT+Sans+Narrow" rel="stylesheet">
+	<meta name="og:title" property="og:title" content="Amazing Offers on Train Tickets , Flights, Buses , Hotels ">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	
+	<link rel="stylesheet" href="../static/css/simple-grid.min.css">
+	<link rel="stylesheet" href="../static/css/home.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+<nav>
+	<div class="logo">Hodophile</div>
+
+	<div class="list">
+		<div>Trains</div>
+		<div>Flights</div>
+		<div>Bus</div>
+		<div>Recharge</div>
+		<div>Login</div>
+	</div>
+</nav>
+
+<div class="bg_wrap">
+<br><br><br><br>
+<div class="container">
+<div class="row">
+	<div class="col-12 center bg_txt"><span style="font-family:'Yesteryear',cursive;">Hodophile<br> Book Now . Pay Later </span> </div>
+	
+</div>
+</div>
+
+  
+
+<div class="input_box">
+	
+
+	<div class="input_box_cont">
+		<div class="row">
+			
+		<div class="col-2">	
+			<div class="dropdown ">
+				<div id="myDropdown" class="dropdown-content show">
+					<div class="opts active_more" onclick="showOpts(0)">Search Trains</div>
+					<div class="opts active_more" onclick="showOpts(1)">PNR Status</div>
+					<div class="opts active_more" onclick="showOpts(2)">Live Status</div>
+					<div class="opts active_more" onclick="showOpts(3)">Station Status</div>
+				</div>	
+  				<button onclick="dropdown()" class="train_more_btn"> >> Search Trains</button>
+			</div>
+		</div>
+		
+
+
+<div class="train_opts search_train_sec">
+	<form>
+			<div class="col-2"><input type="text" placeholder="From"></div>
+			<div class="col-1"><button class="from_to_btn">&#8644;</button></div>
+			<div class="col-2"><input type="text" placeholder="To"></div>
+			<div class="col-2"><input type="date"></div>
+			<div class="col-2"><button class="train_search_btn">Search</button></div>
+	</form>
+</div>
+
+<div class="train_opts pnr_sec">
+	PNR
+</div>
+
+<div class="train_opts live_status_sec">
+	Live Status
+</div>
+
+<div class="train_opts  station_status_sec">
+	Station Status
+</div>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+</div><!-- bg_wrap div ends -->
+
+<!-- Offers Section Starts -->
+
+<div class="offers">
+	<div class="row">
+		<div class="col-12 center offers_h">Offers</div>
+	</div>
+
+<br><br>
+	<div class="o center">
+		<div class="row">
+			<div class="col-4 ">
+				<div class="offer_box">
+					OFFER ONE
+				</div>
+
+			</div>
+
+			<div class="col-4">
+				<div class="offer_box">
+					OFFER TWO
+				</div>
+			</div>
+
+			<div class="col-4">
+				<div class="offer_box">
+				OFFER THREE
+				</div>
+			</div>
+		</div>
+	</div>
+</div> <!-- Offers div ends  -->
+
+
+<!-- How it works Section Starts -->
+
+<div class="how_it_works">
+	<div class="how_it_works_h center">How it Works?</div>
+
+	<br><br>
+	<div class="container">
+		<div class="row center	">
+			<div class="col-12">Step 1</div>
+		</div>
+		<div class="row center	">
+			<div class="col-12">Step 2</div>
+		</div>
+		<div class="row center	">
+			<div class="col-12">Step 3</div>
+		</div>
+	</div>
+
+</div>
+
+
+<!-- How it works Section Ends -->
+
+
+
+<script>
+	$(window).scroll(function(){
+		var scroll=$(window).scrollTop();
+		if(scroll>200){
+			$("nav").addClass("nav_scroll");
+		}
+		else{
+			$("nav").removeClass("nav_scroll");
+		}
+	})
+
+</script>
+
+<script>
+
+function dropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.train_more_btn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    console.log(dropdowns.length);
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+    
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<script>
+	var index=0;
+	showOpts(index);
+
+
+function showOpts(index){
+	var i;
+	var x=document.getElementsByClassName("train_opts");
+	var opts=document.getElementsByClassName("opts");
+	
+	for(i=0;i<x.length;i++){
+		x[i].style.display="none";
+	}
+
+	for(i=0;i<opts.length;i++){
+		opts[i].className=opts[i].className.replace("active_more","");
+	}
+
+	x[index].style.display="block";
+	opts[index].className+="active_more";
+
+}
+</script>
 
 </body>
 </html>

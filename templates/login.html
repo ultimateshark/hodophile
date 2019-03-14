@@ -19,14 +19,14 @@
 
 <div class="login_box">
 	<div class="login_txt">Login</div><br><br>
-	<div class="create_txt">Don't have an account? <a href="#">Create Now</a> </div>
+	<div class="create_txt">Don't have an account? <a href="/get-sign">Create Now</a> </div>
 
 	<br><br>
 
-	<form>
-		<input type="text" name="" placeholder="USERNAME OR PASSWORD"><br><br>
-		<input type="password" name="" placeholder="PASSWORD"><br><br>
-		<button class="login_btn">LOGIN</button>
+	<form action="/submit-login-form" method="POST">
+		<input type="text" name="email" placeholder="ENTER YOUR EMAIL"><br><br>
+		<input type="password" name="passwd" placeholder="ENTER YOUR PASSWORD"><br><br>
+		<button class="login_btn" type="submit">LOGIN</button>
 	</form>
 
 </div>

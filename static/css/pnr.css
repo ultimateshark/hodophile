@@ -65,7 +65,7 @@ nav{
 
 .pnr_status_box{
 	background-color: rgba(255,255,255,0.6);
-	margin-top:170px;
+	margin-top:80px;
 }
 
 .pnr_cont{
@@ -74,7 +74,7 @@ nav{
 
 
 .st_names{
-	margin-top:80px;
+	margin-top:50px;
 	margin-left:25%;
 	font-size:1.2em;
 }
@@ -89,5 +89,34 @@ nav{
 	font-weight:bold;
 }
 
+.other_det{
+	margin-top:50px;
+	margin-left:-150px;
+}
 
 
+
+.pax_list{
+	margin-top:60px;
+	margin-left: -100px;
+}
+
+.pax_txt{
+	font-weight: bold;
+	font-size:1.2em;
+}
+
+.pnr_no,.class,.quota{
+	font-size:1.2em;
+	text-align: center;
+}
+
+span{
+	font-size:0.8em;
+}
+
+span.status{
+	font-size:1.1em;
+	margin-left:50px;
+	font-weight: bold;
+}

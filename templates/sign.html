@@ -19,26 +19,14 @@
 
 <div class="login_box">
 	<div class="login_txt">Create New Account</div><br><br>
-	<div class="create_txt">Already Have an Account? <a href="#">Login</a> </div>
-
+	<div class="create_txt">Already Have an Account? <a href="/get-login">Login</a> </div>
 	<br><br>
-
-<!-- 
-aadhar
-username
-email
-contact number
-gender
-age
-password
- -->
-
-	<form>
-		<input type="text" name="" placeholder="USERNAME"><br><br>
-		<input type="email" name="" placeholder="EMAIL ADDRESS"><br><br>
-		<input type=""><br><br>
+	<form action="submit-signup-form" method="POST">
+		<input type="text" name="" placeholder="ENTER YOUR NAME"><br><br>
+		<input type="email" name="" placeholder="ENTER EMAIL ADDRESS"><br><br>
+		<input type="number" size="12" maxlength="12" name="aadhar" placeholder="ENTER AADHAR NUMBER"><br><br>
 		<input type="password" name="" placeholder="PASSWORD"><br><br><br>
-		<button class="login_btn">LOGIN</button>
+		<button class="login_btn" type="submit">SUBMIT</button>
 	</form>
 
 </div>

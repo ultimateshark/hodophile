@@ -14,11 +14,11 @@
 	<div class="logo">Hodophile</div>
 
 	<div class="list">
-		<div>Trains</div>
-		<div>Flights</div>
-		<div>Bus</div>
-		<div>Recharge</div>
-		<div>Login</div>
+		<div>{{nav_value[0][0]}}</div>
+		<div>{{nav_value[1][0]}}</div>
+		<div>{{nav_value[2][0]}}</div>
+		<div>{{nav_value[3][0]}}</div>
+		<div> <a href="{{nav_value[4][1]}}" style="text-decoration: none;color: white;">{{nav_value[4][0]}}</a></div>
 	</div>
 </nav>
 
@@ -27,12 +27,13 @@
 
 <div class="search_box_wrap">
 	<div class="search_box">
-			<input type="text" name="" placeholder="FROM">
+		<form action="/search-between-trains" method="POST">
+			<input type="text" placeholder="From" name="stfrom">
 			<span class="swap">&#8644;</span>
-			<input type="text" name="" placeholder="TO">
-			<input type="date">
+			<input type="text" placeholder="To"  name="stto">
+			<input type="date" name="date">
 			<button class="search_btn">SEARCH</button>
-
+		</form>
 	</div>
 </div>
 
@@ -49,18 +50,18 @@
 		</div>	
 
 	<br><br>
-			
-		<div class="train_box">
-			<div class="det"><span id="train_route_btn">12581</span> <div class="t_name">MUV NDLS SF EXP</div></div>
+	{% for t in data["trains"] %}
+		<div class="train_box" style="margin-top: 15px;">
+			<div class="det"><span id="train_route_btn">{{t["number"]}}</span> <div class="t_name">{{t["name"]}}</div></div>
 			<div class="time_wrap">
 				<div class="circle"></div>
-				<div class="time">23:20</div>
-				<div class="stations">Ghaziabad</div>	
-				<div class="duration">4h 42m</div>
+				<div class="time">{{t["src_departure_time"]}}</div>
+				<div class="stations">{{t["from_station"]["name"]}}</div>	
+				<div class="duration">{{t["travel_time"]}}</div>
 				 <hr>  
 				<div class="circle"></div>
-				<div class="time">05:00</div>
-				<div class="stations">Kanpur Central</div>					
+				<div class="time">{{t["dest_arrival_time"]}}</div>
+				<div class="stations">{{t["to_station"]["name"]}}</div>					
 			</div>
 
 
@@ -74,6 +75,7 @@
 				<button>2S</button>
 			</div>
 		</div>
+		{% endfor %}
 	</div>
 </div>
 

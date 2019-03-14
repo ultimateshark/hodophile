@@ -19,11 +19,11 @@
 <div class="logo">Hodophile</div>
 
 	<div class="list">
-		<div>Trains</div>
-		<div>Flights</div>
-		<div>Bus</div>
-		<div>Recharge</div>
-		<div>Login</div>
+		<div>{{nav_value[0][0]}}</div>
+		<div>{{nav_value[1][0]}}</div>
+		<div>{{nav_value[2][0]}}</div>
+		<div>{{nav_value[3][0]}}</div>
+		<div> <a href="{{nav_value[4][1]}}" style="text-decoration: none;color: white;">{{nav_value[4][0]}}</a></div>
 	</div>
 
 </nav>
@@ -51,11 +51,11 @@
 		<div class="input_box_cont">
 
 			<div class="train_inp_opts search_train_sec">
-			<form>
-					<input type="text" placeholder="From"><br>
-					<button class="swap_btn">&#8645;</button><br>
-					<input type="text" placeholder="To"><br>
-					<input type="date"><br>
+			<form action="/search-between-trains" method="POST">
+					<input type="text" placeholder="From" name="stfrom"><br>
+					<button class="swap_btn">&#8644;</button><br>
+					<input type="text" placeholder="To"  name="stto"><br>
+					<input type="date" name="date"><br>
 					<button class="train_search_btn">Search</button>
 			</form>
 		</div>

@@ -226,23 +226,64 @@ input{
 
 
 .offers_box{
-	position: relative;
-	top:900px;
-	left:7%;
+	margin-top:850px;
+	margin-left:100px;
 	width:87%;
 }	
 
 	
 .offer_box_1 , .offer_box_2 , .offer_box_3{
-background-color:rgba(255,255,255,0.5);
-height:350px;
-border:2px solid rgba(255,255,255,0.4);
+	background-color:rgba(255,255,255,0.5);
+	height:350px;
+	border:2px solid rgba(255,255,255,0.4);
 }
 
 
 
+.offer_box_1{
+	background: url(../images/offers/o1.jpg);
+	background-size: cover;
+}
+
+.offer_box_2{
+	background: url(../images/offers/o2.jpg);
+	background-size: cover;
+}
+
+.offer_box_3{
+	background: url(../images/offers/o3.jpg);
+	background-size: cover;
+}
 
 .how_it_works{
 	position: relative;
 	top:1100px;
 }
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
+footer {
+  background: #191919;
+  color: white;
+  height:auto;
+}
+
+footer .logo2{
+	font-family: 'Yesteryear',cursive;
+	font-size:2em;
+	margin-left:40px;
+	margin-top:12px;
+}
+

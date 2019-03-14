@@ -127,13 +127,13 @@ input:-webkit-autofill:active {
 }
 
 
-input[type=text],input[type=password],input[type=date]{
+input[type=text],input[type=password],input[type=date],select{
 	background-color:rgba(255,255,255,0.2);
 	border:2px solid rgba(255,255,255,0.2);
 
 }
 
-input{
+input,select{
 	width:300px;
 	height:45px;
 	margin-top:10px;
@@ -166,6 +166,10 @@ input{
 	color:#fff;
 }
 
+.train_search_btn:hover{
+	cursor: pointer;
+	opacity: 0.8;
+}
 
 
 

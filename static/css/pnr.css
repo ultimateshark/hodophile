@@ -73,32 +73,29 @@ nav{
 }
 
 
-.st_names{
+.st{
 	margin-top:50px;
-	margin-left:25%;
-	font-size:1.2em;
 }
 
-.st_2{
-	margin-top:-86px;
-	margin-left:45%;
-}
-
-.st_c{
+span.st_c{
+	font-weight: bold;
 	font-size:2em;
-	font-weight:bold;
 }
+
 
 .other_det{
 	margin-top:50px;
-	margin-left:-150px;
+	margin-left:-10px;
+	font-size: 1.4em;
+
 }
 
 
 
 .pax_list{
 	margin-top:60px;
-	margin-left: -100px;
+	margin-left: 0px;
+	font-size:1.1em;
 }
 
 .pax_txt{
@@ -106,12 +103,11 @@ nav{
 	font-size:1.2em;
 }
 
-.pnr_no,.class,.quota{
-	font-size:1.2em;
-	text-align: center;
+.pax_det{
+	font-size: 1.1em;
 }
 
-span{
+span.sub_h{
 	font-size:0.8em;
 }
 
